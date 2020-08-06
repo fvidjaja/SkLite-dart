@@ -32,7 +32,7 @@ class SVC extends Classifier {
         params["dual_coef_"],
         params["_intercept_"],
         params["n_support_"],
-        List<int>.from(params["classes_"]),
+        List<int>.from(params["classes"]),
         params["kernel"],
         params["_gamma"],
         params["coef0"],
@@ -199,7 +199,7 @@ class LinearSVC extends Classifier {
   LinearSVC(this.coef, this.intercept, this.classes);
 
   factory LinearSVC.fromMap(Map<String, dynamic> params) {
-    return LinearSVC(params["coef_"], params["intercept_"], params["classes_"]);
+    return LinearSVC(params["coef_"], params["intercept_"], params["classes"]);
   }
 
   /// Implementation of sklearn.svm.LinearSVC.predict.

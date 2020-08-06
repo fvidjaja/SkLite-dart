@@ -23,7 +23,7 @@ class GaussianNB extends Classifier {
         List<double>.from(params['class_prior_']),
         List<List<dynamic>>.from(params['sigma_']),
         List<List<dynamic>>.from(params['theta_']),
-        List<int>.from(params["classes_"]));
+        List<int>.from(params["classes"]));
   }
 
   /// Implementation of sklearn.nayve_bayes.GaussianNB.predict.
@@ -69,7 +69,7 @@ class BernoulliNB extends Classifier {
         List<double>.from(params["class_log_prior_"]),
         List<List<dynamic>>.from(params["neg_prob_"]),
         List<List<dynamic>>.from(params["delta_probs_"]),
-        List<int>.from(params["classes_"]));
+        List<int>.from(params["classes"]));
   }
 
   /// Implementation of sklearn.nayve_bayes.BernoulliNB.predict.

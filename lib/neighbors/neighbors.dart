@@ -34,7 +34,7 @@ class KNeighborsClassifier extends Classifier {
         List<int>.from(params["_y"]),
         params["n_neighbors"],
         params["p"],
-        List<int>.from(params["classes_"]));
+        List<int>.from(params["classes"]));
   }
 
   double cmp(List<dynamic> temp, List<dynamic> cand, int q) {
