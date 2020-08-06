@@ -23,7 +23,7 @@ class RandomForestClassifier extends Classifier {
 
   /// Override from Classifier.
   factory RandomForestClassifier.fromMap(Map<String, dynamic> params) {
-    return RandomForestClassifier(List<int>.from(params["classes"]), params["dtrees"]);
+    return RandomForestClassifier(List<int>.from(params["classes_"]), params["dtrees"]);
   }
 
   /// Initializes the decision [trees] within the forest.
